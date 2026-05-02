@@ -1,0 +1,29 @@
+{
+  "name": "hodos-full-stack-screening",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Node.js and React.js implementation of the Hodos full stack screening tasks.",
+  "author": "Gautam Prasad Upadhyay <gp4820@srmist.edu.in>",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server/index.js",
+    "client": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "jsonwebtoken": "^9.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vite": "^5.1.5"
+  }
+}
